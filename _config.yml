@@ -48,7 +48,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi I am Kunal and I am a Data Enginner. I build pipelines - from lake to container(mostly a pod) and back. Previously, I have worked as a Software Developer and wore a Data Scientist hat during my internship.
+  Hi! I am Kunal and I am a Data Enginner. I build pipelines - from the lake to a container (or pod) and back. Previously, I have worked as a Software Developer and also wore a Data Scientist hat during my internship.
 
 
 content:
@@ -64,8 +64,8 @@ content:
         # quote: >
         #   Solving 21st century problems by 
         description: | # this will include new lines to allow paragraphs
-            I work in a team with Data Scientiests and Machine Learning Enginners to develop end to end Machine Learning applications that allow users in telecom domain to easily deploy, use, retrain and monitor machine learning models. 
-            This include pipeline building using opensource / proprietary tools, developing an interface for end users to interact with the application and some software development work to make a complete application.
+            I work in a team with Data Scientiests and Machine Learning Enginners to develop end to end Machine Learning applications that allow users in telecom domain to easily deploy, use, retrain and monitor machine learning models. <\br>
+            My work includes pipeline building using opensource / proprietary tools, developing an interface for end users to interact with the application and some software development work to make a complete application.
 
   # - title: Education # Title for the section
   #   layout: list # Type of content section (list/text)
