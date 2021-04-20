@@ -9,7 +9,7 @@ version: 2
 name: Kunal Deshmukh
 title: Data Engineer
 email: kunaldeshmukh27@gmail.com
-website: kunaldeshmukh.com
+website: www.kunaldeshmukh.com
 
 # Dark Mode (true/false/never)
 darkmode: false
@@ -32,7 +32,7 @@ linkedin_username: krdeshmukh
 # Additional icon links
 additional_links:
 - title: https://scholar.google.com/
-  icon: fas fa-globe
+  icon: fas fa-user-graduate
   url: https://scholar.google.com/citations?user=K06WfEEAAAAJ
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
@@ -46,7 +46,7 @@ additional_links:
 
 # About Section
 # about_title: About Me
-about_profile_image: images/profile.jpg
+about_profile_image: images/profile.png
 about_content: | # this will include new lines to allow paragraphs
   Hi! I am Kunal and I am a Data Enginner. I build pipelines - from the lake to a container (or pod) and back. Previously, I have worked as a Software Developer and also wore a Data Scientist hat during my internship.
 
@@ -64,22 +64,39 @@ content:
         # quote: >
         #   Solving 21st century problems by 
         description: | # this will include new lines to allow paragraphs
-            I work in a team with Data Scientiests and Machine Learning Enginners to develop end to end Machine Learning applications that allow users in telecom domain to easily deploy, use, retrain and monitor machine learning models. <\br>
+            I work in a team with Data Scientiests and Machine Learning Enginners to develop end to end Machine Learning applications that allow users in telecom domain to easily deploy, use, retrain and monitor machine learning models. 
             My work includes pipeline building using opensource / proprietary tools, developing an interface for end users to interact with the application and some software development work to make a complete application.
+      - layout: left
+        title: Infosys
+        link: infosys.com
+        link_text: Infosys.com
+        sub_title: Systems Engineer
+        caption: Jan 2015 - June 2017
+        # quote: >
+        #   Solving 21st century problems by 
+        description: | # this will include new lines to allow paragraphs
+            I learned to fix software applications first before developing them from scratch. I worked in a team with other talented software developers to maintain and enhance softwares. Major part of my work was in Java, Oracle DB. I was introduced to the world of Python here and spent lot of time writing scripts to automate work and some Data analytics. 
 
-  # - title: Education # Title for the section
-  #   layout: list # Type of content section (list/text)
-  #   content:
-  #     - layout: left
-  #       title: Harvard University
-  #       caption: 2010 - 2013
-  #       sub_title: BSc Computer Science
-  #       quote: >
-  #         Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-  #       description: | # this will include new lines to allow paragraphs
-  #         During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
-
-  #         I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: San Jose State University (SJSU), CA
+        caption: 2017 - 2029
+        sub_title: MSc Computer Science
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+            Started post graduation after a brief staint in industry. I focused on Data Science and got opportuinity apply tricks during my work as a Research assistant. 
+            During free time, established ML clob for students at SJSU. 
+      - layout: left
+        title: Mumbai University
+        caption: 2010 - 2014
+        sub_title: BE (Computer Engg)
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+            Studied Software development, Databases, Networking ... 
 
   # - title: Projects # Title for the section
   #   layout: list # Type of content section (list/text)
