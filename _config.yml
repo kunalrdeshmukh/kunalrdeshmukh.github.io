@@ -92,7 +92,7 @@ content:
         description: | # this will include new lines to allow paragraphs
             Started post graduation after a brief staint in industry. I focused on Data Science and got opportuinity apply tricks during my work as a Research assistant. 
             
-            During free time, established ML clob for students at SJSU. 
+            During free time, established ML club for students at SJSU. 
 
       - layout: left
         title: Mumbai University
@@ -108,8 +108,8 @@ content:
 
 
   - title: Publications
-      layout: text
-      content: | # this will include new lines to allow paragraphs
+    layout: text
+    content: | # this will include new lines to allow paragraphs
         - Residual CNN Image Compression            [Published in LNCS Vol. 11845, pp 371 - 382 ](https://link.springer.com/chapter/10.1007/978-3-030-33723-0_30)
           
           Designed and implemented image compression framework based on fully convolutional neural networks and GANs. Achieved SSIM of 0.86 after 4x compression in size.
