@@ -48,7 +48,9 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.png
 about_content: | # this will include new lines to allow paragraphs
-  Hi! I am Kunal and I am a Data Enginner. I build pipelines - from the lake to a container (or pod) and back. Previously, I have worked as a Software Developer and also wore a Data Scientist hat during my internship.
+  Hi! I am Kunal and I am a Data Enginner. I build pipelines - from the lake to a container (or pod) and back. 
+  
+  Previously, I have worked as a Software Developer and also wore a Data Scientist hat during my internship.
 
 
 content:
@@ -76,7 +78,7 @@ content:
         # quote: >
         #   Solving 21st century problems by 
         description: | # this will include new lines to allow paragraphs
-            I learned to fix software applications first before developing them from scratch. I worked in a team with other talented software developers to maintain and enhance softwares. Major part of my work was in Java, Oracle DB. I was introduced to the world of Python here and spent lot of time writing scripts to automate work and some Data analytics. 
+            I learned here to fix enterprise software applications in production. I worked with other talented software developers to maintain and enhance applications. Major part of my work was in Java, Oracle DB. I was introduced to the world of Python here and spent lot of time writing scripts to automate work and some Data analytics. 
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
@@ -99,7 +101,42 @@ content:
         # quote: >
         #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
-            Studied Software development, Databases, Networking ... 
+            I was introduced to Software development, Databases, Networking .. etc., along with many other essential life skills here. I learned to manage multiple projects and assignments at once and managed to navigate though tough deadlines by burning midnight oil. 
+
+            Apart from studies, participated in Robotics workshops and hackethons. I was IT Head and then Secretory of the local chapter of Computer Society of India(CSI).
+
+
+
+  - title: Publications
+      layout: text
+      content: | # this will include new lines to allow paragraphs
+        - Residual CNN Image Compression            [Published in LNCS Vol. 11845, pp 371 - 382 ](https://link.springer.com/chapter/10.1007/978-3-030-33723-0_30)
+          
+          Designed and implemented image compression framework based on fully convolutional neural networks and GANs. Achieved SSIM of 0.86 after 4x compression in size.
+        
+        - The Nubo Virtual Services Marketplace     [arXiv: 1909.04934](https://arxiv.org/abs/1909.04934)
+
+          Contributed to profile analysis and scalability study for Nubo distributed marketplace with Ethereum based Quorum blockchain.
+
+
+  # - title: Projects # Title for the section
+  #   layout: list # Type of content section (list/text)
+  #   content:
+  #     - layout: top-middle
+  #       title: Super awesome project
+  #       link: github.com/sproogen
+  #       # link_text: Project Website
+  #       additional_links:
+  #         - title:  sproogen/modern-resume-theme
+  #           icon: fab fa-github
+  #           url: github.com/sproogen/modern-resume-theme
+  #         # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+  #         #   icon: fab fa-github
+  #         #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+  #       quote: >
+  #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+  #       description: | # this will include new lines to allow paragraphs
+  #         I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
   # - title: Projects # Title for the section
   #   layout: list # Type of content section (list/text)
