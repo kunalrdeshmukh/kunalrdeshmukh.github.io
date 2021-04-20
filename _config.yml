@@ -66,6 +66,7 @@ content:
         description: | # this will include new lines to allow paragraphs
             I work in a team with Data Scientiests and Machine Learning Enginners to develop end to end Machine Learning applications that allow users in telecom domain to easily deploy, use, retrain and monitor machine learning models. 
             My work includes pipeline building using opensource / proprietary tools, developing an interface for end users to interact with the application and some software development work to make a complete application.
+      
       - layout: left
         title: Infosys
         link: infosys.com
@@ -81,14 +82,16 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: San Jose State University (SJSU), CA
+        title: San Jose State University (SJSU)
         caption: 2017 - 2029
         sub_title: MSc Computer Science
         # quote: >
         #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
             Started post graduation after a brief staint in industry. I focused on Data Science and got opportuinity apply tricks during my work as a Research assistant. 
+            
             During free time, established ML clob for students at SJSU. 
+
       - layout: left
         title: Mumbai University
         caption: 2010 - 2014
