@@ -78,7 +78,7 @@ content:
         # quote: >
         #   Solving 21st century problems by 
         description: | # this will include new lines to allow paragraphs
-            I learned here to fix enterprise software applications in production. I worked with other talented software developers to maintain and enhance applications. Major part of my work was in Java, Oracle DB. I was introduced to the world of Python here and spent lot of time writing scripts to automate work and some Data analytics. 
+            I learned here to fix enterprise software applications in production and worked with other talented software developers to maintain and enhance applications. Major part of my work was in Java and Oracle DB. I was introduced to the world of Python here and spent lot of time writing scripts to automate work and some Data analytics. 
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
@@ -118,6 +118,15 @@ content:
 
           Contributed to profile analysis and scalability study for Nubo distributed marketplace with Ethereum based Quorum blockchain.
 
+
+  - title: Blogs
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+        - [Collaborative Filtering in Recommendation Systems](https://medium.com/kunalrdeshmukh/collaborative-filtering-in-recommendation-systems-2fa49be8f518)
+                  
+        - [FTP server with Raspberry PI and HDD](https://medium.com/kunalrdeshmukh/ftp-server-with-raspberry-pi-and-hdd-3c10ce95f2d4)
+
+        - [Optimizing AI program execution in the cloud](https://www.ericsson.com/en/blog/2018/7/optimizing-ai-program-execution-in-the-cloud)
 
   # - title: Projects # Title for the section
   #   layout: list # Type of content section (list/text)
