@@ -90,9 +90,9 @@ content:
         # quote: >
         #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
-            Started post graduation after a brief staint in industry. I focused on Data Science and got opportuinity apply tricks during my work as a Research assistant. 
+            Started post graduation after a brief staint in industry. I focused on Data Science and got opportuinity to apply tricks during my work as a Research assistant. 
             
-            During free time, established ML club for students at SJSU. 
+            During free time, established and contributed to ML club for students at SJSU. 
 
       - layout: left
         title: Mumbai University
@@ -103,7 +103,7 @@ content:
         description: | # this will include new lines to allow paragraphs
             I was introduced to Software development, Databases, Networking .. etc., along with many other essential life skills here. I learned to manage multiple projects and assignments at once and managed to navigate though tough deadlines by burning midnight oil. 
 
-            Apart from studies, participated in Robotics workshops and hackethons. I was IT Head and then Secretory of the local chapter of Computer Society of India(CSI).
+            Apart from studies, participated in Robotics workshops and hackethons. I was IT Head and then secretary of the local chapter of Computer Society of India(CSI).
 
 
 
