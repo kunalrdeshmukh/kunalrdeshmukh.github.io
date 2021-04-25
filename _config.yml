@@ -46,7 +46,7 @@ additional_links:
 
 # About Section
 # about_title: About Me
-about_profile_image: images/profile.png
+about_profile_image: images/IMG.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi! I am Kunal and I am a Data Enginner. I build pipelines - from the lake to a container (or pod) and back. 
   
