@@ -48,7 +48,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/IMG.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi! I am Kunal and I am a Data Enginner. I build pipelines - from the lake to a container (or pod) and back. 
+  Hi! I am Kunal and I am a Data Enginner. I build pipelines - from the lake to a container (or pod) and back and help find interesting stuff in data. 
   
   Previously, I have worked as a Software Developer and also wore a Data Scientist hat during my internship.
 
@@ -58,16 +58,26 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        title: Meta Platforms
+        link: meta.com
+        link_text: meta.com
+        sub_title: Data Engineer
+        caption: March 2022 - Current
+        # quote: >
+        #   Solving 21st century problems by 
+        description: | # this will include new lines to allow paragraphs
+            Learning new things! Still a newbie here.
+
+      - layout: left
         title: Ericsson
         link: ericsson.com
         link_text: Ericsson.com
         sub_title: Data Engineer
-        caption: July 2019 - Present
+        caption: July 2019 - March 2022
         # quote: >
         #   Solving 21st century problems by 
         description: | # this will include new lines to allow paragraphs
-            I work in a team with Data Scientiests and Machine Learning Enginners to develop end to end Machine Learning applications that allow users in telecom domain to easily deploy, use, retrain and monitor machine learning models. 
-            My work includes pipeline building using opensource / proprietary tools, developing an interface for end users to interact with the application and some software development work to make a complete application.
+            I worked here in a team with Data Scientiests and Machine Learning Enginners to develop end to end Machine Learning applications that allow users in to easily deploy, use, retrain and monitor machine learning models. 
       
       - layout: left
         title: Infosys
