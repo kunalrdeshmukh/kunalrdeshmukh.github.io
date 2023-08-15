@@ -34,9 +34,6 @@ additional_links:
 - title: https://scholar.google.com/
   icon: fas fa-user-graduate
   url: https://scholar.google.com/citations?user=K06WfEEAAAAJ
-- title: Threads
-  icon: https://www.kunaldeshmukh.com/images/Threads_Logo_PNG1.png
-  url: https://www.threads.net/@kunalrdeshmukh
 
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
