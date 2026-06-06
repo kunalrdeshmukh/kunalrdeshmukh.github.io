@@ -1,6 +1,10 @@
 # Site
 repository: kunalrdeshmukh/kunalrdeshmukh.github.io
 favicon: images/favicon.ico
+url: "https://kunalrdeshmukh.github.io"
+description: >-
+  Kunal Deshmukh — Data Engineer building data pipelines and integrity
+  measurement systems. Currently at Meta; previously Ericsson and Infosys.
 
 # Content configuration version
 version: 2
@@ -199,3 +203,4 @@ sass:
 
 plugins:
  - jekyll-seo-tag
+ - jekyll-sitemap
