@@ -21,7 +21,7 @@ jobs:
       - name: Refresh Writing list from Medium
         run: node scripts/update-writing.mjs
 
-      - name: Commit if changed
+      - name: Commit and push if changed
         run: |
           if [ -n "$(git status --porcelain index.html)" ]; then
             git config user.name  "github-actions[bot]"
@@ -32,15 +32,3 @@ jobs:
           else
             echo "No changes to commit."
           fi
-
-      - name: Assemble static site
-        run: |
-          mkdir -p dist
-          cp index.html sitemap.xml robots.txt dist/
-          cp -r images dist/
-
-      - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy dist --project-name kunaldeshmukh --commit-dirty=true
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
