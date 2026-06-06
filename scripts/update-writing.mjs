@@ -44,7 +44,7 @@ if (posts.length === 0) {
 }
 
 const list = posts
-  .map((p) => `      <div class="pub"><a href="${esc(p.link)}">${esc(p.title)}</a></div>`)
+  .map((p) => `      <a href="${esc(p.link)}">${esc(p.title)}</a>`)
   .join('\n');
 
 const html = await readFile(FILE, 'utf8');
