@@ -1,0 +1,46 @@
+name: Update Writing from Medium
+
+on:
+  schedule:
+    - cron: '17 6 * * *'   # daily at 06:17 UTC
+  workflow_dispatch:        # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Refresh Writing list from Medium
+        run: node scripts/update-writing.mjs
+
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain index.html)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add index.html
+            git commit -m "chore: refresh Writing from Medium feed"
+            git push
+          else
+            echo "No changes to commit."
+          fi
+
+      - name: Assemble static site
+        run: |
+          mkdir -p dist
+          cp index.html sitemap.xml robots.txt dist/
+          cp -r images dist/
+
+      - name: Deploy to Cloudflare Pages
+        run: npx wrangler pages deploy dist --project-name kunaldeshmukh --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

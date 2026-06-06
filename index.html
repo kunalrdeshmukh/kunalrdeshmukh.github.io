@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kunal Deshmukh | Data Engineer</title>
+  <meta name="description" content="Kunal Deshmukh — Data Engineer building data pipelines and integrity measurement systems. Currently at Meta; previously Ericsson and Infosys.">
+  <meta name="author" content="Kunal Deshmukh">
+  <link rel="canonical" href="https://kunalrdeshmukh.github.io/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Kunal Deshmukh | Data Engineer">
+  <meta property="og:description" content="Data Engineer building data pipelines and integrity measurement systems. Currently at Meta; previously Ericsson and Infosys.">
+  <meta property="og:url" content="https://kunalrdeshmukh.github.io/">
+  <meta property="og:image" content="https://kunalrdeshmukh.github.io/images/profile.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kunal Deshmukh | Data Engineer">
+  <meta name="twitter:description" content="Data Engineer building data pipelines and integrity measurement systems. Currently at Meta; previously Ericsson and Infosys.">
+  <meta name="twitter:image" content="https://kunalrdeshmukh.github.io/images/profile.png">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="me" href="https://www.threads.net/@kunalrdeshmukh">
+  <link rel="me" href="https://www.linkedin.com/in/krdeshmukh">
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+              Arial, "Helvetica Neue", sans-serif;
+      --maxw: 720px;
+    }
+
+    [data-theme="light"] {
+      --bg:       #ffffff;
+      --text:     #1f2733;
+      --muted:    #69757f;
+      --faint:    #97a1ab;
+      --line:     #e7eaee;
+      --accent:   #2563eb;
+      --chip-bg:  #f1f5f9;
+    }
+    [data-theme="dark"] {
+      --bg:       #0f1115;
+      --text:     #e6e9ee;
+      --muted:    #9aa4b0;
+      --faint:    #6b7480;
+      --line:     #232831;
+      --accent:   #6ea8fe;
+      --chip-bg:  #1a1f27;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 17px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 4rem 1.5rem 5rem; }
+
+    /* theme toggle */
+    .toggle {
+      position: fixed; top: 1rem; right: 1rem;
+      font-family: var(--font); font-size: .85rem;
+      color: var(--muted); background: var(--bg);
+      border: 1px solid var(--line); border-radius: 999px;
+      padding: .35rem .8rem; cursor: pointer;
+    }
+    .toggle:hover { color: var(--accent); border-color: var(--accent); }
+
+    header { margin-bottom: 3rem; }
+    h1 {
+      font-size: 2.6rem; line-height: 1.1; letter-spacing: -1px;
+      margin: 0 0 1.4rem;
+    }
+
+    .lede { font-size: 1.08rem; color: var(--text); margin: 0 0 1rem; }
+    .lede.sub { color: var(--muted); }
+
+    section { margin-top: 3.2rem; }
+    h2 {
+      font-size: .8rem; text-transform: uppercase; letter-spacing: .12em;
+      color: var(--faint); font-weight: 700;
+      margin: 0 0 1.4rem; padding-bottom: .6rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .item { margin-bottom: 1.8rem; }
+    .item:last-child { margin-bottom: 0; }
+    .item-head {
+      display: flex; flex-wrap: wrap; align-items: baseline;
+      gap: .2rem .6rem; margin-bottom: .15rem;
+    }
+    .item-head .org { font-weight: 700; font-size: 1.08rem; }
+    .item-head .pos { color: var(--muted); }
+    .item-head .when { margin-left: auto; color: var(--faint); font-size: .92rem; white-space: nowrap; }
+    .item p { margin: .35rem 0 0; color: var(--text); }
+
+    .pub { margin-bottom: 1.3rem; }
+    .pub .t { font-weight: 600; }
+    .pub .tag {
+      display: inline-block; font-size: .78rem; color: var(--muted);
+      background: var(--chip-bg); border-radius: 6px; padding: .05rem .45rem; margin-left: .3rem;
+    }
+    .pub p { margin: .2rem 0 0; color: var(--muted); font-size: .95rem; }
+
+    ul.links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; }
+
+    footer { margin-top: 4rem; padding-top: 1.4rem; border-top: 1px solid var(--line); color: var(--faint); font-size: .9rem; }
+
+    @media (max-width: 520px) {
+      .wrap { padding-top: 3rem; }
+      h1 { font-size: 2.1rem; }
+      .item-head .when { margin-left: 0; flex-basis: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle" id="themeToggle" aria-label="Toggle color theme">◐ theme</button>
+
+  <div class="wrap">
+    <header>
+      <h1>Kunal Deshmukh</h1>
+
+      <p class="lede">Hi! I'm Kunal, a Data Engineer. I build pipelines — from the lake to a container (or pod) and back — and help find the interesting stuff hiding in data.</p>
+      <p class="lede sub">These days I spend a lot of time in the integrity measurement world: figuring out what's real, what's not, and building the metrics (and a couple of AI agents) to tell the difference. Before this I wore a Software Developer hat, and even a Data Scientist one during an internship.</p>
+    </header>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="item">
+        <div class="item-head">
+          <span class="org"><a href="https://meta.com">Meta Platforms</a></span>
+          <span class="pos">— Data Engineer</span>
+          <span class="when">Mar 2022 – Present</span>
+        </div>
+        <p>I turn oceans of data into insights that leadership and product teams actually use. Along the way I helped move our main integrity measurement metric from human-only to mostly AI-assisted labeling, kept an eye on things during the Threads launch, and built a couple of AI agents that quietly save the team a lot of engineering hours each week.</p>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <span class="org"><a href="https://ericsson.com">Ericsson</a></span>
+          <span class="pos">— Data Engineer</span>
+          <span class="when">Jul 2019 – Mar 2022</span>
+        </div>
+        <p>I worked with Data Scientists and played a Machine Learning Engineer role to build end-to-end ML applications — the kind that let users easily deploy, use, retrain and monitor machine learning models. Plenty of Kubernetes, Kubeflow and a healthy amount of distributed training.</p>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <span class="org"><a href="https://infosys.com">Infosys</a></span>
+          <span class="pos">— Senior Systems Engineer</span>
+          <span class="when">Jan 2015 – Jun 2017</span>
+        </div>
+        <p>This is where I learned to fix enterprise software in production and work alongside talented developers to keep things running. Most of my work was in Java and Oracle DB — but it's also where I met Python, and promptly fell down the rabbit hole of automating everything and dabbling in data analytics.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+
+      <div class="item">
+        <div class="item-head">
+          <span class="org">San Jose State University (SJSU)</span>
+          <span class="pos">— MSc Computer Science</span>
+          <span class="when">2017 – 2019</span>
+        </div>
+        <p>Headed back to school after a brief stint in industry, focusing on Data Science — and got to apply the tricks for real as a Research Assistant. In my free time, I helped start and run an ML club for fellow students at SJSU.</p>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <span class="org">Mumbai University</span>
+          <span class="pos">— BE (Computer Engg)</span>
+          <span class="when">2010 – 2014</span>
+        </div>
+        <p>Where I was introduced to software development, databases, networking and a fair share of essential life skills. Outside of class, I joined robotics workshops and hackathons, and served as IT Head and later Secretary of the local chapter of the Computer Society of India (CSI).</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+
+      <div class="pub">
+        <span class="t"><a href="https://link.springer.com/chapter/10.1007/978-3-030-33723-0_30">Residual CNN Image Compression</a></span><span class="tag">LNCS Vol. 11845</span>
+        <p>An image compression framework based on fully convolutional neural networks and GANs. Achieved SSIM of 0.86 after 4× compression in size.</p>
+      </div>
+      <div class="pub">
+        <span class="t"><a href="https://arxiv.org/abs/1909.04934">The Nubo Virtual Services Marketplace</a></span><span class="tag">arXiv:1909.04934</span>
+        <p>Profile analysis and scalability study for the Nubo distributed marketplace with an Ethereum-based Quorum blockchain.</p>
+      </div>
+      <div class="pub">
+        <span class="t"><a href="https://www.researchgate.net/publication/363024729_Graph_Neural_Network_based_Root_Cause_Analysis_Using_Multivariate_Time-series_KPIs_for_Wireless_Networks">GNN-based Root Cause Analysis using multivariate time-series KPIs</a></span><span class="tag">IEEE/IFIP NOMS</span>
+        <p>A graph neural network that pinpoints the root cause of failures from multivariate time-series KPIs.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Writing</h2>
+      <!-- MEDIUM:START — auto-generated from medium.com/@kunaldeshmukh27; do not edit by hand -->
+      <div class="pub"><a href="https://medium.com/kunalrdeshmukh/ftp-server-with-raspberry-pi-and-hdd-3c10ce95f2d4">FTP server with Raspberry PI and HDD</a></div>
+      <div class="pub"><a href="https://medium.com/analytics-vidhya/overview-of-anomaly-detection-techniques-9d35034cca79">Overview of anomaly detection techniques</a></div>
+      <div class="pub"><a href="https://medium.com/kunalrdeshmukh/collaborative-filtering-in-recommendation-systems-2fa49be8f518">Collaborative Filtering in Recommendation Systems</a></div>
+      <!-- MEDIUM:END -->
+      <div class="pub"><a href="https://www.ericsson.com/en/blog/2018/7/optimizing-ai-program-execution-in-the-cloud">Optimizing AI program execution in the cloud</a></div>
+    </section>
+
+    <section>
+      <h2>A little more about me</h2>
+      <p class="lede sub">When I'm not wrangling pipelines, I like to tinker. I once turned a Raspberry Pi and an old hard drive into a home FTP server (and then, naturally, <a href="https://medium.com/kunalrdeshmukh/ftp-server-with-raspberry-pi-and-hdd-3c10ce95f2d4">blogged about it</a>). I also enjoy writing the occasional Medium post to explain things I've just figured out, and I have a soft spot for a good recommendation-system rabbit hole.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <ul class="links">
+        <li><a href="mailto:kunaldeshmukh27@gmail.com">Email</a></li>
+        <li><a href="https://github.com/kunalrdeshmukh">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/krdeshmukh">LinkedIn</a></li>
+        <li><a href="https://scholar.google.com/citations?user=K06WfEEAAAAJ">Google Scholar</a></li>
+        <li><a href="https://www.threads.net/@kunalrdeshmukh">Threads</a></li>
+      </ul>
+    </section>
+
+    <footer>© <span id="year"></span> Kunal Deshmukh · built static, no frameworks</footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    var toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('click', function () {
+      var root = document.documentElement;
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  </script>
+</body>
+</html>
